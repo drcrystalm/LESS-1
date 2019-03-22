@@ -130,11 +130,76 @@ table {
 * {
   box-sizing: border-box;
 }
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 html,
 body {
-  height: 100%;
   font-family: "Spectral", serif;
+  box-sizing: border-box;
 }
-.p {
-  color: primary-color;
+header {
+  background: lightgreen;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  padding: 15px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1 rem;
+  color: #428bca;
+  margin-left: 20px;
+}
+h1 {
+  font-size: 3rem;
+  color: orchid;
+}
+button {
+  display: block;
+  background-color: orchid;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 1 rem;
+  border-radius: 10px;
+}
+h2 {
+  background: orchid;
+}
+img {
+  height: 10%;
+  width: 16.5%;
+  border-radius: 60%;
+}
+.upper {
+  display: flex;
+  text-align: center;
+}
+.middle-section {
+  display: flex;
+  flex-direction: column;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.footer {
+  font-size: 10px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+@phone {
+  @media (max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
