@@ -137,6 +137,7 @@ table {
 .container {
   width: 100%;
   max-width: 1080px;
+  max-height: 100vh;
   margin: 0 auto;
 }
 html {
@@ -144,7 +145,7 @@ html {
 }
 body {
   font-size: 1.2rem;
-  background-color: aquamarine;
+  background: aquamarine;
 }
 
 html,
@@ -209,7 +210,7 @@ img {
   padding: 40px;
   button {
     display: block;
-    background-color: @white;
+    background: @white;
     color: @secondary-color;
     margin: 0 10px 20px;
     cursor: pointer;
@@ -280,4 +281,27 @@ img {
   background-position: left center;
   color: #ef9671;
   transition: background-position 2000ms ease-out;
+}
+
+@media (max-width: 500px) {
+  .bottom {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    .prior {
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background: teal;
+    .upper {
+      flex-wrap: wrap;
+      button {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
