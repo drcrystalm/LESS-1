@@ -92,6 +92,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -106,17 +107,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -124,6 +129,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -137,15 +143,18 @@ table {
 .container {
   width: 100%;
   max-width: 1080px;
-  max-height: 100vh;
+  // max-height: 100vh;
   margin: 0 auto;
 }
+
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
+
 body {
   font-size: 1.2rem;
   background: aquamarine;
+  line-height: 1.25;
 }
 
 html,
@@ -172,6 +181,7 @@ nav a {
   font-size: 1rem;
   color: @link-color;
   margin-left: 20px;
+
   &:hover {
     color: black;
   }
@@ -208,6 +218,7 @@ img {
 .upper-text {
   text-align: center;
   padding: 40px;
+
   button {
     display: block;
     background: @white;
@@ -231,6 +242,7 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+
   .good {
     margin-top: 20px;
   }
@@ -250,23 +262,20 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .shiny {
-  background-image: -webkit-linear-gradient(
-    left,
+  background-image: -webkit-linear-gradient(left,
     white 25%,
     #fde071 37.5%,
     #ef9671,
     #996a6e 62.5%,
-    white 75%
-  );
-  background-image: linear-gradient(
-    90deg,
+    white 75%);
+  background-image: linear-gradient(90deg,
     white 25%,
     #fde071 37.5%,
     #ef9671,
     #996a6e 62.5%,
-    white 75%
-  );
+    white 75%);
   background-position: right center;
   background-size: 400% auto;
   -webkit-background-clip: text;
@@ -288,16 +297,20 @@ img {
     flex-wrap: wrap;
     text-align: center;
     width: 100%;
+
     .prior {
       margin-top: 10px;
     }
   }
 }
+
 @media (max-width: 500px) {
   body {
     background: teal;
+
     .upper {
       flex-wrap: wrap;
+
       button {
         width: 100%;
         margin: 0 auto;
